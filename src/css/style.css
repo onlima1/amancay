@@ -18,7 +18,9 @@ body {
 
 a {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
 
 header {
   position: relative;
@@ -98,3 +100,12 @@ footer {
   text-align: center;
   background-color: #02659B;
   color: white; }
+
+@media only screen and (max-width: 768px) {
+  header .header_top p {
+    font-size: 1.5rem; }
+  header .menu_top li {
+    font-size: 1.1rem; }
+  h1 {
+    font-size: 2rem;
+    margin-left: 20px; } }
