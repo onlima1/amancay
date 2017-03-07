@@ -1,0 +1,60 @@
+$cor_fundo: white
+$cor_texto: #999
+
+$cor_0: #0083ca
+$cor_1: #02659B
+
+body
+	background-color: $cor_fundo
+	font-family: arial
+	font-size: 14px
+	color: $cor_texto
+	margin: 0
+	padding: 0
+	width: 100%
+	height: 100vh
+
+a
+	color: white
+	text-decoration: none
+
+header
+	position: relative
+	height: 100px
+	width: 100%
+	.header_top
+		background-color: $cor_0
+		height: 100%
+		width: 100%
+	.menu_top
+		position: absolute
+		background-color: $cor_1
+		width: 100%
+		bottom: 0
+		li
+			width: calc(100%/3)
+			text-overflow: ellipsis
+			white-space: nowrap
+			overflow: hidden
+			text-align: -webkit-center
+
+.pedido 
+	img
+		margin: 0
+	&>div
+		padding: 10px
+	&:nth-child(odd)
+		background-color: #ccc
+	&:nth-child(even)
+		background-color: #e8e8e8
+
+.pedidoHeader
+	background-color: $cor_1
+	color: white
+	padding: 5px
+	margin-top: 10px
+.dataPed
+	text-align: right
+.thumbnail
+	width: 100%
+

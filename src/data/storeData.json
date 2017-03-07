@@ -1,0 +1,61 @@
+{
+	"pedidos": [{
+			"id": "00001",
+			"userId": "00001",
+			"data": "20/01/2016 10:12:48",
+			"products": [{
+				"prodId": "216801700",
+				"addressId": "00001",
+				"name": "Everton Lima"
+			}, {
+				"prodId": "214802300",
+				"addressId": "00003",
+				"name": "Huguinho"
+			}, {
+				"prodId": "200636100",
+				"addressId": "00002",
+				"name": "Zezinho"
+			}],
+			"status": "entregue"
+		}, {
+			"id": "00002",
+			"userId": "00001",
+			"data": "23/02/2017 11:15:23",
+			"products": [{
+				"prodId": "193399400",
+				"addressId": "00001",
+				"name": "Everton Lima"
+			}, {
+				"prodId": "084218500",
+				"addressId": "00003",
+				"name": "Everton Lima"
+			}],
+			"status": "pendente de entrega"
+		}
+
+	],
+
+
+	"address": [{
+		"id": "00001",
+		"address": "Rua Correia de Lemos, 780",
+		"zipCode": "04140-030",
+		"bairro": "Chácara Inglesa",
+		"city": "São Paulo",
+		"state": "SP"
+	}, {
+		"id": "00002",
+		"address": "Av. Paulista, 2181",
+		"zipCode": "01311-300",
+		"bairro": "Consolação",
+		"city": "São Paulo",
+		"state": "SP"
+	}, {
+		"id": "00003",
+		"address": "R. Palacete das Águias, 551",
+		"zipCode": "04635-022",
+		"bairro": "Vila Alexandria",
+		"city": "São Paulo",
+		"state": "SP"
+	}]
+}

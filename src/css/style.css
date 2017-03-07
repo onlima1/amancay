@@ -1,0 +1,57 @@
+body {
+  background-color: white;
+  font-family: arial;
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+header {
+  position: relative;
+  height: 100px;
+  width: 100%; }
+  header .header_top {
+    background-color: #0083ca;
+    height: 100%;
+    width: 100%; }
+  header .menu_top {
+    position: absolute;
+    background-color: #02659B;
+    width: 100%;
+    bottom: 0; }
+    header .menu_top li {
+      width: calc(100%/3);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: -webkit-center; }
+
+.pedido img {
+  margin: 0; }
+
+.pedido > div {
+  padding: 10px; }
+
+.pedido:nth-child(odd) {
+  background-color: #ccc; }
+
+.pedido:nth-child(even) {
+  background-color: #e8e8e8; }
+
+.pedidoHeader {
+  background-color: #02659B;
+  color: white;
+  padding: 5px;
+  margin-top: 10px; }
+
+.dataPed {
+  text-align: right; }
+
+.thumbnail {
+  width: 100%; }
