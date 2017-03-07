@@ -1,0 +1,33 @@
+<section id="pedidos" ng-show="sections.tab === 1">
+	<div ng-controller="StoreController as store">
+	  <h1>Seus Pedidos</h1>
+	  <div ng-repeat="pedido in store.pedidos">
+	    
+	    <div class="pedidoHeader row">
+	      <div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
+	        Pedido Id: {{pedido.id}}
+	      </div>
+	      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 dataPed">
+	        Data da compra: {{pedido.data}}
+	      </div>
+	    </div>
+	    <div class="pedido row" ng-repeat="prod in pedido.products">
+	      <div class="col-xs-3 col-sm-3 col-md-3">
+	        <img ng-src="images/produtos/{{prod.prod.image}}" class="thumbnail" />
+	      </div>
+	      <div class="col-xs-9 col-sm-9 col-md-9">
+	        <div class="name col-xs-12 col-sm-9 col-md-9">
+	          {{prod.prod.name}}
+	        </div>
+	        <div class="price col-xs-12 col-sm-9 col-md-3">
+	          {{prod.prod.price | currency:"R$ "}}
+	        </div>
+	        <div class="description col-xs-12 col-sm-12 col-md-12">
+	          {{prod.prod.description}}
+	        </div>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+</section>

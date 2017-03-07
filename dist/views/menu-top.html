@@ -1,0 +1,7 @@
+<nav class="menu_top">
+	<ul class="nav nav-tabs"  ng-controller="MenuController as menu">
+		<li role="presentation" ng-class="{active:menu.tab === 1}"><a ng-click="menu.setTab(1)">Seus Pedidos</a></li>
+		<li role="presentation" ng-class="{active:menu.tab === 2}"><a ng-click="menu.setTab(2)">Locais de entrega</a></li>
+		<li role="presentation" ng-class="{active:menu.tab === 3}"><a ng-click="menu.setTab(3)">Sua Conta</a></li>
+	</ul>
+</nav>

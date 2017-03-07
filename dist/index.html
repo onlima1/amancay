@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="amancay">
+  <head>
+    <title>Teste Admissional - Amancay </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <script src="js/main.min.js"></script>
+
+  </head>
+  <body>
+    <!-- About -->
+    <header>
+      <div class="header_top">
+        <p>Consultoria Amancay: Teste adminissional<br>
+         Everton Lima - feijaoonlima@gmail.com</p>
+      </div>
+      <menu-top></menu-top>
+    </header>
+    
+    <div class="conteudo container" ng-controller="SectionController as sections">
+      <pedidos-description></pedidos-description>
+      <pedidos-locals></pedidos-locals>
+      <user-account></user-account>
+    </div>
+
+    <footer>
+      Everton Lima - feijaoonlima@gmail.com
+    </footer>
+  </body>
+</html>

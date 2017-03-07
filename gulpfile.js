@@ -29,7 +29,7 @@ gulp.task('fonts', function() {
 	}
 	return gulp.src(fontList)
 	.pipe(gulp.dest(destPlace))
-})
+});
 
 // SASS //
 var sass = require('gulp-sass');
@@ -96,20 +96,26 @@ gulp.task('clean:dist', function() {
 // CLEAR CACHE //
 gulp.task('cache:clear', function () {
 	return cache.clearAll();
-})
+});
 
 // DATA //
 var jsonMinify = require('gulp-json-minify');
 gulp.task('data', function() {
-	return gulp.src('src/data/**/*')
-	.pipe(jsonMinify())
-	.pipe(gulp.dest('dist/data'))
-})
+  return gulp.src('src/data/**/*')
+  .pipe(jsonMinify())
+  .pipe(gulp.dest('dist/data'))
+});
+
+// VIEWS //
+gulp.task('views', function() {
+	return gulp.src('src/views/**/*')
+	.pipe(gulp.dest('dist/views'))
+});
 
 // BUILD //
 gulp.task('build', function() {
 	argv.production = true;
 	runSequence(
-		'clean:dist','cache:clear','sass',['useref'],'fonts','images','data','browserSync'
+		'clean:dist','cache:clear','sass',['useref'],'views','fonts','images','data','browserSync'
 	)
-})
+});

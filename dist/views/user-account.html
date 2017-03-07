@@ -1,0 +1,50 @@
+<section id="account" ng-show="sections.tab === 3">
+	<div ng-controller="UserController as user">
+	  <h1>Sua Conta</h1>
+	  <div>
+	    <div class="pedidoHeader row">
+	      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	        Dados Pessoais
+	      </div>
+	    </div>
+
+	    <div class="pedido row">
+	      <div class="name col-xs-12 col-sm-9 col-md-9">
+	          {{user.data.name}}
+	      </div>
+	      <div class="description col-xs-12 col-sm-9 col-md-9">
+	          {{user.data.email}}
+	      </div>
+	      <div class="description col-xs-12 col-sm-9 col-md-9">
+	          {{user.data.telefone}}
+	      </div>
+	      <div class="description col-xs-12 col-sm-9 col-md-9">
+	          {{user.data.bornDate}}
+	      </div>
+	    </div>
+		
+		<div class="pedidoHeader row">
+	      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	        Endereço
+	      </div>
+	    </div>
+	    <div class="pedido row">
+	    	<div class="description col-xs-12 col-sm-12 col-md-12">
+			{{user.data.address}}
+			</div>
+			<div class="description col-xs-6 col-sm-6 col-md-6">
+			{{user.data.bairro}}
+			</div>
+			<div class="description col-xs-6 col-sm-6 col-md-6">
+			{{user.data.zipCode}}
+			</div>
+			<div class="description col-xs-6 col-sm-6 col-md-6">
+			{{user.data.city}}
+			</div>
+			<div class="description col-xs-6 col-sm-6 col-md-6">
+			{{user.data.state}}
+			</div>
+	    </div>
+	  </div>
+	</div>
+</section>
