@@ -5,17 +5,17 @@ Author: Everton Lima @ feijaoonlima gmail.com
 #TECNOLOGIAS
 
 GULP<br>
--metodos utilizados do gulpfile: gulp | gulp watch | gulp build<br>
+-métodos utilizados do gulpfile: gulp | gulp watch | gulp build<br>
 SASS<br>
 -base para css - sem mixins<br>
 BOOTSTRAP<br>
--para criacao do grid<br>
+-para criação do grid<br>
 JQUERY<br>
 -para o javascript<br>
 ANGULAR JS<br>
 -framework -- faz a mágica acontecer<br>
 GITHUB<br>
--repositorio do projeto<br>
+-repositório do projeto<br>
 
 # ESTRUTURA
 
