@@ -19,7 +19,11 @@ header {
   header .header_top {
     background-color: #0083ca;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    color: white;
+    text-align: -webkit-center;
+    font-size: 2rem;
+    line-height: 60px; }
   header .menu_top {
     position: absolute;
     background-color: #02659B;
