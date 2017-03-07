@@ -32,6 +32,7 @@ header {
     width: 100%;
     color: white;
     text-align: -webkit-center;
+    text-align: center;
     font-size: 2rem;
     line-height: 2.5rem; }
     header .header_top p {
@@ -47,7 +48,8 @@ header {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      text-align: -webkit-center; }
+      text-align: -webkit-center;
+      text-align: center; }
 
 .conteudo {
   margin-bottom: 30px; }
@@ -57,11 +59,10 @@ section {
   margin-bottom: 30px; }
 
 .pedido {
-  color: black; }
+  color: black;
+  padding: 10px; }
   .pedido img {
     margin: 0; }
-  .pedido > div {
-    padding: 10px; }
   .pedido:nth-child(odd) {
     background-color: #ccc; }
   .pedido:nth-child(even) {
@@ -105,7 +106,7 @@ footer {
   header .header_top p {
     font-size: 1.5rem; }
   header .menu_top li {
-    font-size: 1.1rem; }
+    font-size: 1.2rem; }
   h1 {
     font-size: 2rem;
     margin-left: 20px; } }
