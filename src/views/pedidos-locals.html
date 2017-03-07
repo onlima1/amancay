@@ -1,6 +1,6 @@
-<section id="pedidos" ng-show="sections.tab === 1">
+<section id="locais" ng-show="sections.tab === 2">
 	<div ng-controller="StoreController as store">
-	  <h1>Seus Pedidos</h1>
+	  <h1>Seus locais de entrega</h1>
 	  <div ng-repeat="pedido in store.pedidos">
 	    
 	    <div class="pedidoHeader row">
@@ -22,8 +22,23 @@
 	        <div class="price col-xs-12 col-sm-9 col-md-3">
 	          {{prod.prod.price | currency:"R$ "}}
 	        </div>
+	        <div class="name col-xs-12 col-sm-12 col-md-12">
+	           {{prod.address.destinatario}}
+	        </div>
 	        <div class="description col-xs-12 col-sm-12 col-md-12">
-	          {{prod.prod.description}}
+	           {{prod.address.address}}
+	        </div>
+	        <div class="description col-xs-6 col-sm-6 col-md-6">
+	           {{prod.address.bairro}}
+	        </div>
+	        <div class="description col-xs-6 col-sm-6 col-md-6">
+	           {{prod.address.zipCode}}
+	        </div>
+	        <div class="description col-xs-6 col-sm-6 col-md-6">
+	           {{prod.address.city}}
+	        </div>
+	        <div class="description col-xs-6 col-sm-6 col-md-6">
+	           {{prod.address.state}}
 	        </div>
 	      </div>
 	    </div>

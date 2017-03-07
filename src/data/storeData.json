@@ -5,16 +5,13 @@
 			"data": "20/01/2016 10:12:48",
 			"products": [{
 				"prodId": "216801700",
-				"addressId": "00001",
-				"name": "Everton Lima"
+				"addressId": "00001"
 			}, {
 				"prodId": "214802300",
-				"addressId": "00003",
-				"name": "Huguinho"
+				"addressId": "00003"
 			}, {
 				"prodId": "200636100",
-				"addressId": "00002",
-				"name": "Zezinho"
+				"addressId": "00002"
 			}],
 			"status": "entregue"
 		}, {
@@ -23,12 +20,10 @@
 			"data": "23/02/2017 11:15:23",
 			"products": [{
 				"prodId": "193399400",
-				"addressId": "00001",
-				"name": "Everton Lima"
+				"addressId": "00001"
 			}, {
 				"prodId": "084218500",
-				"addressId": "00003",
-				"name": "Everton Lima"
+				"addressId": "00003"
 			}],
 			"status": "pendente de entrega"
 		}
@@ -36,15 +31,17 @@
 	],
 
 
-	"address": [{
+	"addresses": [{
 		"id": "00001",
+		"destinatario": "Everton Lima",
 		"address": "Rua Correia de Lemos, 780",
-		"zipCode": "04140-030",
+		"zipCode": "04140-000",
 		"bairro": "Chácara Inglesa",
 		"city": "São Paulo",
 		"state": "SP"
 	}, {
 		"id": "00002",
+		"destinatario": "João Maria da Silva",
 		"address": "Av. Paulista, 2181",
 		"zipCode": "01311-300",
 		"bairro": "Consolação",
@@ -52,6 +49,7 @@
 		"state": "SP"
 	}, {
 		"id": "00003",
+		"destinatario": "Maria João da Silva",
 		"address": "R. Palacete das Águias, 551",
 		"zipCode": "04635-022",
 		"bairro": "Vila Alexandria",

@@ -20,6 +20,7 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/menuController.js"></script>
     <script type="text/javascript" src="js/storeController.js"></script>
+    <script type="text/javascript" src="js/userController.js"></script>
     <!-- endbuild -->
 
   </head>
@@ -27,46 +28,20 @@
     <!-- About -->
     <header>
       <div class="header_top">
-        Consultoria Amancay: Teste adminissional por Everton Lima - feijaoonlima@gmail.com
+        <p>Consultoria Amancay: Teste adminissional<br>
+         Everton Lima - feijaoonlima@gmail.com</p>
       </div>
-      <nav class="menu_top">
-        <ul class="nav nav-tabs"  ng-controller="MenuController as menu">
-          <li role="presentation" ng-class="{active:menu.tab === 1}"><a ng-click="menu.setTab(1)">Seus Pedidos</a></li>
-          <li role="presentation" ng-class="{active:menu.tab === 2}"><a ng-click="menu.setTab(2)">Locais de entrega</a></li>
-          <li role="presentation" ng-class="{active:menu.tab === 3}"><a ng-click="menu.setTab(3)">Sua Conta</a></li>
-        </ul>
-      </nav>
+      <menu-top></menu-top>
     </header>
     
-    <div class="container" ng-controller="SectionController as sections">
-  
-      
+    <div class="conteudo container" ng-controller="SectionController as sections">
       <pedidos-description></pedidos-description>
-      
-
-      <section id="locais" ng-show="sections.tab === 2">
-        <div class="jumbotron">
-          <h1>locais</h1>
-          <p>...</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-        </div>
-      </section>
-
-      <section id="account" ng-show="sections.tab === 3">
-        <div class="jumbotron">
-          <h1>account</h1>
-          <p>...</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-        </div>
-      </section>
+      <pedidos-locals></pedidos-locals>
+      <user-account></user-account>
     </div>
 
-
-
-
-
     <footer>
-      
+      Everton Lima - feijaoonlima@gmail.com
     </footer>
   </body>
 </html>
